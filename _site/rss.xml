@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+        <title>Functional Exercises</title>
+        <description>Functional Exercises - Denys Kholod</description>
+        <link>http://dkholod.github.io</link>
+        <atom:link href="http://dkholod.github.io/rss.xml" rel="self" type="application/rss+xml" />
+        <lastBuildDate>Sat, 20 Aug 2016 11:22:37 +0300</lastBuildDate>
+        <pubDate>Sat, 20 Aug 2016 11:22:37 +0300</pubDate>
+        <ttl>60</ttl>
+
+
+        <item>
+                <title>List length using fold</title>
+                <description>
+&lt;p&gt;F#
+&lt;script src=&quot;https://gist.github.com/dkholod/0eb40fe334973462eb8e3c910ff5cff2.js&quot;&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;Scala
+&lt;script src=&quot;https://gist.github.com/dkholod/9cf1b63e6fbadf0065a5d674a9ad4ef0.js&quot;&gt;&lt;/script&gt;&lt;/p&gt;
+</description>
+                <link>http://dkholod.github.io/functional%20exercises/2016/08/19/list-length-using-fold</link>
+                <guid>http://dkholod.github.io/functional%20exercises/2016/08/19/list-length-using-fold</guid>
+                <pubDate>Fri, 19 Aug 2016 00:00:00 +0300</pubDate>
+        </item>
+
+
+</channel>
+</rss>

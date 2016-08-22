@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ 
+ <title>Functional Exercises</title>
+ <link href="http://dkholod.github.io/atom.xml" rel="self"/>
+ <link href="http://dkholod.github.io"/>
+ <updated>2016-08-20T11:22:37+03:00</updated>
+ <id>http://dkholod.github.io</id>
+ <author>
+   <name>Denys Kholod</name>
+   <email>denyskh@outlook.com</email>
+ </author>
+
+ 
+ <entry>
+   <title>List length using fold</title>
+   <link href="http://dkholod.github.io/functional%20exercises/2016/08/19/list-length-using-fold"/>
+   <updated>2016-08-19T00:00:00+03:00</updated>
+   <id>http://dkholod.github.io/functional%20exercises/2016/08/19/list-length-using-fold</id>
+   <content type="html">
+&lt;p&gt;F#
+&lt;script src=&quot;https://gist.github.com/dkholod/0eb40fe334973462eb8e3c910ff5cff2.js&quot;&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;Scala
+&lt;script src=&quot;https://gist.github.com/dkholod/9cf1b63e6fbadf0065a5d674a9ad4ef0.js&quot;&gt;&lt;/script&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ 
+</feed>
