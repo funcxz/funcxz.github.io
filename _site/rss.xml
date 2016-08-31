@@ -3,10 +3,10 @@
 <channel>
         <title>functional exercises</title>
         <description>functional exercises - Denys Kholod</description>
-        <link>http://funcxz.github.io</link>
-        <atom:link href="http://funcxz.github.io/rss.xml" rel="self" type="application/rss+xml" />
-        <lastBuildDate>Tue, 23 Aug 2016 02:47:06 +0300</lastBuildDate>
-        <pubDate>Tue, 23 Aug 2016 02:47:06 +0300</pubDate>
+        <link>https://funcxz.github.io</link>
+        <atom:link href="https://funcxz.github.io/rss.xml" rel="self" type="application/rss+xml" />
+        <lastBuildDate>Thu, 01 Sep 2016 02:12:52 +0300</lastBuildDate>
+        <pubDate>Thu, 01 Sep 2016 02:12:52 +0300</pubDate>
         <ttl>60</ttl>
 
 
@@ -18,9 +18,13 @@
 
 &lt;p&gt;Scala
 &lt;script src=&quot;https://gist.github.com/dkholod/9cf1b63e6fbadf0065a5d674a9ad4ef0.js&quot;&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;Clojure
+&lt;script src=&quot;https://gist.github.com/dkholod/3f9e48f7b675ec31a8f2e9d9fb87b7e4.js&quot;&gt;&lt;/script&gt;&lt;/p&gt;
+
 </description>
-                <link>http://funcxz.github.io/functional%20exercises/2016/08/19/list-length-using-fold</link>
-                <guid>http://funcxz.github.io/functional%20exercises/2016/08/19/list-length-using-fold</guid>
+                <link>https://funcxz.github.io/functional%20exercises/2016/08/19/list-length-using-fold</link>
+                <guid>https://funcxz.github.io/functional%20exercises/2016/08/19/list-length-using-fold</guid>
                 <pubDate>Fri, 19 Aug 2016 00:00:00 +0300</pubDate>
         </item>
 
