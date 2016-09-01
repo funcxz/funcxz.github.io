@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Welcome
-tagline: functional exercise
+tagline: to functional exercises
 ---
 {% include JB/setup %}
 
