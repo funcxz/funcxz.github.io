@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
+<loc>/functional%20exercises/2016/09/06/size-of-blobs-in-azure-storage-account</loc>
+<lastmod>2016-09-06T00:00:00+03:00</lastmod>
+</url>
+<url>
 <loc>/functional%20exercises/2016/08/19/list-length-using-fold</loc>
 <lastmod>2016-08-19T00:00:00+03:00</lastmod>
 </url>

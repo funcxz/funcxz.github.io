@@ -4,8 +4,8 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>List length using fold</title>
-    <meta name="description" content="Count list length using fold function">
+    <title>Size of blobs in Azure Storage account</title>
+    <meta name="description" content="Calculate size of blobs in Azure Storage account using Microsoft SDK">
     <meta name="author" content="Denys Kholod">
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
@@ -89,31 +89,32 @@
         
 
 <div class="page-header">
-  <h1>List length using fold <small>F# vs Scala vs Clojure</small></h1>
+  <h1>Size of blobs in Azure Storage account <small>F# vs Scala vs Clojure</small></h1>
 </div>
 
 <div class="row">
   <div class="span10">
     
-<p>F#
-<script src="https://gist.github.com/dkholod/0eb40fe334973462eb8e3c910ff5cff2.js"></script></p>
+<p>In this functional exercise, I’m studying Azure Storage SDK to accomplish a storage size space calculation used by blobs.</p>
 
-<p>Scala
-<script src="https://gist.github.com/dkholod/9cf1b63e6fbadf0065a5d674a9ad4ef0.js"></script></p>
+<p><strong>F#</strong> AzureTypeProvider hides boilerplate code
+<script src="https://gist.github.com/dkholod/0af9b17821169007cbcea34dfb028f46.js"></script></p>
 
-<p>Clojure
-<script src="https://gist.github.com/dkholod/3f9e48f7b675ec31a8f2e9d9fb87b7e4.js"></script></p>
+<p><strong>Scala</strong> No build in sumBy, but sortBy, groupBy are avaliable
+<script src="https://gist.github.com/dkholod/0d9793b62de05ad93f1b7ce5bb63cc44.js"></script></p>
 
+<p><strong>Clojure</strong> Using Java interop ..
+<script src="https://gist.github.com/dkholod/849ee1b8294561061c0d9c30a834bc07.js"></script></p>
 
     <hr>
     <div class="pagination">
       <ul>
       
-        <li class="prev disabled"><a>&larr; Previous</a></li>
+        <li class="prev"><a href="/functional%20exercises/2016/08/19/list-length-using-fold" title="List length using fold">&larr; Previous</a></li>
       
         <li><a href="/archive.html">Archive</a></li>
       
-        <li class="next"><a href="/functional%20exercises/2016/09/06/size-of-blobs-in-azure-storage-account" title="Size of blobs in Azure Storage account">Next &rarr;</a></li>
+        <li class="next disabled"><a>Next &rarr;</a>
       
       </ul>
     </div>
@@ -144,7 +145,7 @@
   
   <div class="span4">
     <h4>Published</h4>
-    <div class="date"><span>19 August 2016</span></div>
+    <div class="date"><span>06 September 2016</span></div>
 
   
     <h4>Tags</h4>
@@ -164,6 +165,10 @@
     	<li><a href="/tags.html#clojure-ref">clojure <span>2</span></a></li>
      
     	<li><a href="/tags.html#exercises-ref">exercises <span>2</span></a></li>
+     
+    	<li><a href="/tags.html#azure-ref">azure <span>1</span></a></li>
+     
+    	<li><a href="/tags.html#storage-ref">storage <span>1</span></a></li>
     
   
 

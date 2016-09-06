@@ -5,10 +5,29 @@
         <description>functional exercises - Denys Kholod</description>
         <link>https://funcxz.github.io</link>
         <atom:link href="https://funcxz.github.io/rss.xml" rel="self" type="application/rss+xml" />
-        <lastBuildDate>Thu, 01 Sep 2016 03:01:26 +0300</lastBuildDate>
-        <pubDate>Thu, 01 Sep 2016 03:01:26 +0300</pubDate>
+        <lastBuildDate>Tue, 06 Sep 2016 23:49:10 +0300</lastBuildDate>
+        <pubDate>Tue, 06 Sep 2016 23:49:10 +0300</pubDate>
         <ttl>60</ttl>
 
+
+        <item>
+                <title>Size of blobs in Azure Storage account</title>
+                <description>
+&lt;p&gt;In this functional exercise, I’m studying Azure Storage SDK to accomplish a storage size space calculation used by blobs.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;F#&lt;/strong&gt; AzureTypeProvider hides boilerplate code
+&lt;script src=&quot;https://gist.github.com/dkholod/0af9b17821169007cbcea34dfb028f46.js&quot;&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Scala&lt;/strong&gt; No build in sumBy, but sortBy, groupBy are avaliable
+&lt;script src=&quot;https://gist.github.com/dkholod/0d9793b62de05ad93f1b7ce5bb63cc44.js&quot;&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Clojure&lt;/strong&gt; Using Java interop ..
+&lt;script src=&quot;https://gist.github.com/dkholod/849ee1b8294561061c0d9c30a834bc07.js&quot;&gt;&lt;/script&gt;&lt;/p&gt;
+</description>
+                <link>https://funcxz.github.io/functional%20exercises/2016/09/06/size-of-blobs-in-azure-storage-account</link>
+                <guid>https://funcxz.github.io/functional%20exercises/2016/09/06/size-of-blobs-in-azure-storage-account</guid>
+                <pubDate>Tue, 06 Sep 2016 00:00:00 +0300</pubDate>
+        </item>
 
         <item>
                 <title>List length using fold</title>
