@@ -7,12 +7,11 @@ tagline: to functional exercises
 
 ## About   
 
-My name is Denys Kholod and I live in Kiev, Ukraine where I write software for enterprise.   
-At leisure time I like to learn functional programing, tools, languages and related ecosystems. Sometimes I use F#, Scala and Clojure to support my daily activities but primarily it is C# that I do for production.   
+My name is Denys Kholod and I live in Kiev, Ukraine where I do software for the enterprise.   
+At leisure time I like to learn functional programming, tools, languages and related ecosystems. Sometimes I use F#, Scala and Clojure to support my daily activities but primarily it is C# that I do for production.   
    
-This is my micro-blog and code snippets library that I use to learn and stay hands-on.   
-During my regular functional exercises I will train to solve one specific problem using different languages with functional attitude, employing the best they can provide.
-   
+This is my microblog and also a code snippets library that I use to learn and stay hands-on.   
+During my regular functional exercises, I will train to solve one specific problem using different languages with functional attitude, employing the best they can provide.   
    
 <p>
   <a href="https://twitter.com/dkholod" class="twitter-follow-button" data-show-count="false">Follow @dkholod</a>
