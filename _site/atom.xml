@@ -4,13 +4,72 @@
  <title>functional exercises</title>
  <link href="https://funcxz.github.io/atom.xml" rel="self"/>
  <link href="https://funcxz.github.io"/>
- <updated>2016-09-06T23:49:10+03:00</updated>
+ <updated>2016-09-16T23:26:19+03:00</updated>
  <id>https://funcxz.github.io</id>
  <author>
    <name>Denys Kholod</name>
    <email>denyskh@outlook.com</email>
  </author>
 
+ 
+ <entry>
+   <title>Quicksort implementation and testing</title>
+   <link href="https://funcxz.github.io/functional%20exercises/2016/09/16/property-based-testing-quicksort-implementation"/>
+   <updated>2016-09-16T00:00:00+03:00</updated>
+   <id>https://funcxz.github.io/functional%20exercises/2016/09/16/property-based-testing-quicksort-implementation</id>
+   <content type="html">
+&lt;p&gt;In this functional exercise, I’m going to implement simple Quicksort algorithm and examine it by using property-based testing approach.&lt;br /&gt;
+For those who are not familiar with property-based testing, it is a great talk of Scott Wlaschin - &lt;a href=&quot;https://fsharpforfunandprofit.com/posts/property-based-testing/&quot;&gt;An introduction to property based testing&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Libs&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/fscheck/FsCheck&quot;&gt;FsCheck&lt;/a&gt; is a library for testing .NET programs on F#, C#, and VB.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/rickynils/scalacheck&quot;&gt;ScalaCheck&lt;/a&gt; is a library used for automated property-based testing of Scala or Java programs.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Both libraries are ports of Haskell’s &lt;a href=&quot;http://www.cse.chalmers.se/~rjmh/QuickCheck/&quot;&gt;QuickCheck&lt;/a&gt;, but ScalaCheck has influenced FsCheck as well.&lt;/p&gt;
+
+&lt;h3 id=&quot;f35&quot;&gt;F#&lt;/h3&gt;
+&lt;script src=&quot;https://gist.github.com/dkholod/c9c6f3b711c7c3ffeed81de4dcafa29c.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;&lt;em&gt;output&lt;/em&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Check.One (config, &lt;code class=&quot;highlighter-rouge&quot;&gt;list is sorted&lt;/code&gt; badSort)&lt;br /&gt;
+;;&lt;br /&gt;
+Falsifiable, after 508 tests (3 shrinks) (StdGen (93102065,296205589)):&lt;br /&gt;
+Label of failing property: neighbour pairs from a list should be ordered&lt;br /&gt;
+Original:&lt;br /&gt;
+[2; -1]&lt;br /&gt;
+Shrunk:&lt;br /&gt;
+[1; 0]&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Ok, passed 100000 tests.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;scala&quot;&gt;Scala&lt;/h3&gt;
+
+&lt;p&gt;Sort function looks quite similar to F# version. &lt;br /&gt;
+&lt;script src=&quot;https://gist.github.com/dkholod/62a56c611ec035993d78d0f0877dff5b.js&quot;&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;output&lt;/em&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;+ list is sorted.sorted list should have same length as original: OK, passe&lt;br /&gt;
+  d 100000 tests.&lt;br /&gt;
+! list is sorted.neighbour pairs from a list should be ordered: Falsified a&lt;br /&gt;
+  fter 1506 passed tests.&lt;br /&gt;
+&amp;gt; ARG_0: List(“0”, “-1”)&lt;br /&gt;
+&amp;gt; ARG_0_ORIGINAL: List(“2147483647”, “-1208819329”)&lt;br /&gt;
++ list is sorted.sorted list should have same length as original: OK, passe&lt;br /&gt;
+  d 100000 tests.&lt;br /&gt;
++ list is sorted.neighbour pairs from a list should be ordered: OK, passed&lt;br /&gt;
+  100000 tests.&lt;br /&gt;
+res0: Unit = ()&lt;/p&gt;
+&lt;/blockquote&gt;
+
+</content>
+ </entry>
  
  <entry>
    <title>Size of blobs in Azure Storage account</title>
@@ -20,14 +79,17 @@
    <content type="html">
 &lt;p&gt;In this functional exercise, I’m studying Azure Storage SDK to accomplish a storage size space calculation used by blobs.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;F#&lt;/strong&gt; AzureTypeProvider hides boilerplate code
+&lt;h3 id=&quot;f35&quot;&gt;F#&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/fsprojects/AzureStorageTypeProvider&quot;&gt;AzureTypeProvider&lt;/a&gt; hides some boilerplate code.
 &lt;script src=&quot;https://gist.github.com/dkholod/0af9b17821169007cbcea34dfb028f46.js&quot;&gt;&lt;/script&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Scala&lt;/strong&gt; No build in sumBy, but sortBy, groupBy are avaliable
+&lt;h3 id=&quot;scala&quot;&gt;Scala&lt;/h3&gt;
+&lt;p&gt;Both Scala and Clojure are using &lt;a href=&quot;https://github.com/Azure/azure-storage-java&quot;&gt;Microsoft Azure Storage SDK for Java&lt;/a&gt;
 &lt;script src=&quot;https://gist.github.com/dkholod/0d9793b62de05ad93f1b7ce5bb63cc44.js&quot;&gt;&lt;/script&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Clojure&lt;/strong&gt; Using Java interop ..
-&lt;script src=&quot;https://gist.github.com/dkholod/849ee1b8294561061c0d9c30a834bc07.js&quot;&gt;&lt;/script&gt;&lt;/p&gt;
+&lt;h3 id=&quot;clojure&quot;&gt;Clojure&lt;/h3&gt;
+&lt;script src=&quot;https://gist.github.com/dkholod/849ee1b8294561061c0d9c30a834bc07.js&quot;&gt;&lt;/script&gt;
+
 </content>
  </entry>
  
