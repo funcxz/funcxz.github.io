@@ -5,10 +5,62 @@
         <description>functional exercises - Denys Kholod</description>
         <link>https://funcxz.github.io</link>
         <atom:link href="https://funcxz.github.io/rss.xml" rel="self" type="application/rss+xml" />
-        <lastBuildDate>Fri, 16 Sep 2016 23:26:19 +0300</lastBuildDate>
-        <pubDate>Fri, 16 Sep 2016 23:26:19 +0300</pubDate>
+        <lastBuildDate>Sat, 08 Oct 2016 00:37:33 +0300</lastBuildDate>
+        <pubDate>Sat, 08 Oct 2016 00:37:33 +0300</pubDate>
         <ttl>60</ttl>
 
+
+        <item>
+                <title>Capitals &amp; Countries &lt;| quiz game</title>
+                <description>
+&lt;p&gt;This exercise starts with F# version of quiz game (for the given country, type the name of its capital city) that is 21 lines of code placed in a single F# script file.&lt;/p&gt;
+
+&lt;p&gt;The &lt;a href=&quot;http://www.worldbank.org/&quot;&gt;World Bank&lt;/a&gt; APIs and &lt;a href=&quot;http://fsharp.github.io/FSharp.Data/library/WorldBank.html&quot;&gt;F# Data: WorldBank Provider&lt;/a&gt; are used to get pairs of countries and corresponding capitals.&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/dkholod/c68d8f8517ed93f2acee1f996c877f96.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;Run the script on Mac terminal:&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;fsharpi CapitalsQuiz.fsx
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;or on Windows cmd:&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;fsi CapitalsQuiz.fsx
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;The next part of the exercise is to host quiz game online. I will examine &lt;a href=&quot;http://elm-lang.org/&quot;&gt;Elm language&lt;/a&gt; to build the game UI.
+The plan is to re-use the part of F# code which delivers random pairs of countries &amp;amp; capitals, and host it in &lt;a href=&quot;https://azure.microsoft.com/en-us/services/functions/&quot;&gt;Azure Functions&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Modified version for function app:&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/dkholod/55cb33f1247f820c5d095cc8af7daaa7.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;Elm has great support for handling HTTP requests, though F# type provider is so easy to use that I just don’t want to mess directly with World Bank APIs on UI.&lt;/p&gt;
+
+&lt;p&gt;Elm language promotes basic pattern that breaks up into the Model, Update, and View functions. Also, I will use The &lt;a href=&quot;https://debois.github.io/elm-mdl/#cards&quot;&gt;Material Design package for Elm&lt;/a&gt; to compose fancy View, but the rest is going to be &lt;em&gt;vanilla&lt;/em&gt; Elm code.&lt;/p&gt;
+
+&lt;p&gt;Model and Messages contract:&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/dkholod/b0a183ac93f4d0dab1ca1573c81469f8.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;The prime piece of Update function:&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/dkholod/415961e96fc08e801420db461e70d339.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;The View function is a simple DOM composition, but if you are interested, follow the link to a &lt;a href=&quot;https://github.com/dkholod/functionalexercises/blob/master/Elm/CapitalsQuizMD.elm&quot;&gt;full listing&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The big deal about Elm is that for creating reusable views, there is no need to build components, directives, templates or other stuff which is sometimes &lt;em&gt;leaky&lt;/em&gt;. Instead, we code helper functions and compose the main view from it.&lt;/p&gt;
+
+&lt;p&gt;Helper function example:
+&lt;script src=&quot;https://gist.github.com/dkholod/03b83f1a4f8d89b95663a16182b421e1.js&quot;&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;Try online how this all works together - &lt;a href=&quot;https://funcxz.github.io/examples/capitalsquiz.html&quot;&gt;Capitals &amp;amp; Countries quiz game&lt;/a&gt;&lt;/p&gt;
+</description>
+                <link>https://funcxz.github.io/functional%20exercises/2016/10/07/capitals-countries-quiz-game</link>
+                <guid>https://funcxz.github.io/functional%20exercises/2016/10/07/capitals--countries-quiz-game</guid>
+                <pubDate>Fri, 07 Oct 2016 00:00:00 +0300</pubDate>
+        </item>
 
         <item>
                 <title>Quicksort implementation and testing</title>
